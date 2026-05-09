@@ -5,3 +5,6 @@ La imagen contiene:
 
 Para construirlo usar el comando docker:  
 ``` docker build -f Dockerfile --tag nombre_imagen:tag .```
+
+Tengo una imagen en Dockerhub:  
+vicentett1/php-xdebug
