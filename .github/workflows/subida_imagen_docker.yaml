@@ -23,5 +23,5 @@ jobs:
         uses: docker/build-push-action@v7
         with:
           push: true
-          tags: vicentett1/php-xdebug:v1
+          tags: vicentett1/php-xdebug:1.0
           context: .
