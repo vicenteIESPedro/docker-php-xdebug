@@ -7,9 +7,9 @@ WORKDIR /var/www/html/
 RUN apt-get update  
 
 # instalo xdebug
-RUN pecl install xdebug 
-RUN docker-php-ext-enable xdebug
-RUN docker-php-ext-enable mysqli && docker-php-ext-enable gd
+RUN pecl install xdebug && docker-php-ext-enable xdebug
+RUN docker-php-ext-install mysqli && docker-php-ext-enable mysqli 
+
 
 #copia configuracion apache
 COPY ./config/apache2.conf /etc/apache2
